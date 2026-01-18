@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolución del HTML</title>
+    
+    <!-- BOOTSTRAP - FRAMEWORK PRINCIPAL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FONT AWESOME - ÍCONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- NAVBAR DE BOOTSTRAP - Responsive con toggle -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>Evolución HTML
+            </a>
+            
+            <!-- BOTÓN TOGGLE PARA MÓVIL (Bootstrap) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- MENÚ COLABSABLE (Bootstrap) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">
+                            <i class="fas fa-history me-1"></i> Historia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparativa.html">
+                            <i class="fas fa-balance-scale me-1"></i> Comparativa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contenido.html">
+                            <i class="fab fa-html5 me-1"></i> HTML5
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="fas fa-envelope me-1"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER CON JUMBOTRON (Bootstrap) -->
+    <header class="bg-gradient-primary text-white py-5 mb-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">
+                        <i class="fas fa-code me-3"></i>Evolución del HTML
+                    </h1>
+                    <p class="lead mb-4">De HTML 1.0 a HTML5 - Un viaje por la historia web</p>
+                    <a href="#contenido" class="btn btn-light btn-lg mt-3">
+                        <i class="fas fa-arrow-down me-2"></i>Explorar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container" id="contenido">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- CARD DE BIENVENIDA (Bootstrap) -->
+                <div class="card shadow-lg mb-5 border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-search me-2"></i>Descubre cómo ha cambiado la web
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- IMAGEN RESPONSIVA (Bootstrap) -->
+                        <div class="text-center mb-4">
+                            <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" 
+                                 alt="Logo oficial de HTML5" 
+                                 class="img-fluid rounded shadow" 
+                                 style="max-width: 300px;">
+                            <p class="text-muted mt-2">Logo oficial de HTML5 - El estándar web moderno</p>
+                        </div>
+                        
+                        <p class="lead">Este sitio te llevará en un recorrido por la fascinante evolución del HTML, desde sus humildes comienzos en 1991 hasta la poderosa versión 5.0 que usamos hoy.</p>
+                        
+                        <hr class="my-4">
+                        
+                        <h3 class="h4 mb-3">
+                            <i class="fas fa-list me-2"></i>¿Qué encontrarás aquí?
+                        </h3>
+                        
+                        <!-- GRID SYSTEM DE BOOTSTRAP para características -->
+                        <div class="row g-4 mt-2">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-history text-primary fa-2x me-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h5">Historia completa</h4>
+                                        <p>Todas las versiones desde HTML 1.0 hasta HTML5</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-balance-scale text-success fa-2x me-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h5">Comparativas</h4>
+                                        <p>Diferencias entre versiones y etiquetas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fab fa-html5 text-danger fa-2x me-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h5">HTML5</h4>
+                                        <p>Las revolucionarias características de la última versión</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-book text-warning fa-2x me-3"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="h5">Recursos</h4>
+                                        <p>Información útil para desarrolladores</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- ALERTA DE BOOTSTRAP para cita -->
+                        <div class="alert alert-info mt-5">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="mb-0 fst-italic">HTML no es solo código, es la historia de cómo aprendimos a comunicarnos en la web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAROUSEL DE BOOTSTRAP - Componente interactivo -->
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h4 mb-0">
+                            <i class="fas fa-images me-2"></i>Línea de tiempo visual
+                        </h3>
+                    </div>
+                    <div class="card-body p-0">
+                        <div id="timelineCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#timelineCarousel" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="p-5 text-center bg-light">
+                                        <i class="fas fa-seedling fa-4x text-success mb-3"></i>
+                                        <h4>1989 - Orígenes</h4>
+                                        <p class="lead">Tim Berners-Lee crea HTML con solo 18 etiquetas</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="p-5 text-center bg-light">
+                                        <i class="fas fa-university fa-4x text-primary mb-3"></i>
+                                        <h4>1993 - W3C</h4>
+                                        <p class="lead">Nace el World Wide Web Consortium para estandarizar la web</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="p-5 text-center bg-light">
+                                        <i class="fas fa-rocket fa-4x text-warning mb-3"></i>
+                                        <h4>1996 - HTML 3.2</h4>
+                                        <p class="lead">Una de las versiones más completas que marcó la historia</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="p-5 text-center bg-light">
+                                        <i class="fab fa-html5 fa-4x text-danger mb-3"></i>
+                                        <h4>2014 - HTML5</h4>
+                                        <p class="lead">La revolución multimedia y semántica llega a la web</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#timelineCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#timelineCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="mb-2">
+                        <i class="far fa-copyright me-2"></i> Lo que no sabías sobre HTML | Por: Alex Mauricio Carlosama Ayala
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-graduation-cap me-2"></i> Estudiante de la Universidad Técnica Particular de Loja
+                    </p>
+                    
+                    <!-- TOOLTIP DE BOOTSTRAP - Componente interactivo -->
+                    <div class="mt-4">
+                        <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Este sitio fue creado como proyecto académico">
+                            <i class="fas fa-info-circle me-1"></i> Información del proyecto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP  JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- SCRIPT PARA ACTIVAR TOOLTIPS (Bootstrap) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Características y Ventajas</title>
+    
+    <!-- BOOTSTRAP CSS - FRAMEWORK PRINCIPAL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FONT AWESOME - ÍCONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- NAVBAR DE BOOTSTRAP - Responsive con toggle -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>Evolución HTML
+            </a>
+            
+            <!-- BOTÓN TOGGLE PARA MÓVIL Bootstrap -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- MENÚ COLABSABLE Bootstrap -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">
+                            <i class="fas fa-history me-1"></i> Historia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparativa.html">
+                            <i class="fas fa-balance-scale me-1"></i> Comparativa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contenido.html">
+                            <i class="fab fa-html5 me-1"></i> HTML5
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            <i class="fas fa-envelope me-1"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER CON JUMBOTRON Bootstrap -->
+    <header class="bg-gradient-primary text-white py-5 mb-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">
+                        <i class="fab fa-html5 me-3"></i>HTML5 - La Revolución Web
+                    </h1>
+                    <p class="lead mb-4">Características, ventajas y mejores prácticas</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- INTRODUCCIÓN A HTML5 - CARD DE BOOTSTRAP -->
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-info-circle me-2"></i> ¿Qué es HTML5?
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- GRID SYSTEM DE BOOTSTRAP -->
+                        <div class="row align-items-center">
+                            <div class="col-md-3 text-center mb-4 mb-md-0">
+                                <i class="fas fa-play-circle fa-5x text-info"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="h4">Introducción a HTML5</h3>
+                                <p>HTML5 es la última especificación del lenguaje HTML que representó una ruptura importante con las prácticas de marcado anteriores. El propósito de los cambios profundos en el lenguaje era:</p>
+                                <!-- LIST GROUP DE BOOTSTRAP -->
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Estandarizar las nuevas formas en que los desarrolladores utilizaban el lenguaje
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Fomentar un conjunto único de mejores prácticas
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                        Crear un desarrollo web más eficiente y accesible
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--  CARD DE BOOTSTRAP -->
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-trophy me-2"></i> Ventajas Clave de HTML5
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h4 mb-4">
+                            <i class="fas fa-star text-warning me-2"></i>Principales Beneficios
+                        </h3>
+                        
+                        <!-- GRID SYSTEM DE BOOTSTRAP con Cards -->
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-success">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-check text-success fa-2x me-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="card-title">Estructura más clara</h5>
+                                                <p class="card-text">Nuevas etiquetas como <code>&lt;header&gt;</code> y <code>&lt;footer&gt;</code> facilitan la organización del contenido y mejoran la accesibilidad.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-check text-primary fa-2x me-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="card-title">Compatibilidad multimedia integrada</h5>
+                                                <p class="card-text">Las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code> permiten agregar sonido y video fácilmente sin complementos adicionales.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card h-100 border-warning">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-check text-warning fa-2x me-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="card-title">Gráficos dinámicos</h5>
+                                                <p class="card-text">Crear gráficos y animaciones con <code>&lt;canvas&gt;</code> y <code>&lt;svg&gt;</code> sin software adicional.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card h-100 border-info">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-check text-info fa-2x me-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="card-title">Mejor almacenamiento de datos</h5>
+                                                <p class="card-text">Funciones como localStorage y sessionStorage para una experiencia de usuario más fluida.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card h-100 border-danger">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-check text-danger fa-2x me-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="card-title">Compatible con dispositivos móviles</h5>
+                                                <p class="card-text">Diseñado para funcionar bien en cualquier tamaño de pantalla.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card h-100 border-secondary">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="fas fa-check text-secondary fa-2x me-3"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="card-title">Depuración más sencilla</h5>
+                                                <p class="card-text">Manejo de errores mejorado para código más limpio.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CARD DE BOOTSTRAP -->
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-header bg-warning text-dark">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-bullseye me-2"></i> Objetivos de Diseño de HTML5
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- ACCORDION DE BOOTSTRAP - Componente interactivo -->
+                        <div class="accordion" id="objetivosAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        <i class="fas fa-sitemap me-2"></i> Fomentar el Marcado Semántico
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#objetivosAccordion">
+                                    <div class="accordion-body">
+                                        <p>Marcado semántico significa etiquetas que tienen significado, no solo apariencia. HTML5 introduce elementos estructurales como:</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-heading text-primary me-2"></i>
+                                                        <code>&lt;header&gt;</code> - Encabezado de página o sección
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-bars text-primary me-2"></i>
+                                                        <code>&lt;nav&gt;</code> - Menú de navegación
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-home text-primary me-2"></i>
+                                                        <code>&lt;main&gt;</code> - Contenido principal
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-newspaper text-primary me-2"></i>
+                                                        <code>&lt;article&gt;</code> - Contenido independiente
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-th-large text-primary me-2"></i>
+                                                        <code>&lt;section&gt;</code> - Sección temática
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-comment-alt text-primary me-2"></i>
+                                                        <code>&lt;aside&gt;</code> - Contenido relacionado
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-shoe-prints text-primary me-2"></i>
+                                                        <code>&lt;footer&gt;</code> - Pie de página
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        <i class="fas fa-paint-roller me-2"></i> Separar el Diseño del Contenido
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#objetivosAccordion">
+                                    <div class="accordion-body">
+                                        <p>HTML5 desaconseja el marcado no significativo que solo afecta la apariencia. Las razones principales:</p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <i class="fas fa-check text-success me-2"></i>
+                                                Más fácil mantener y rediseñar un sitio
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="fas fa-check text-success me-2"></i>
+                                                El contenido se adapta mejor a diferentes dispositivos y contextos
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        <i class="fas fa-universal-access me-2"></i> Promover Accesibilidad y Diseño Responsivo
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#objetivosAccordion">
+                                    <div class="accordion-body">
+                                        <p>Considera a todos los usuarios, incluyendo aquellos con discapacidades visuales que usan lectores de pantalla o navegadores especializados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CARD DE BOOTSTRAP -->
+                <div class="card shadow border-0">
+                    <div class="card-header bg-dark text-white">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-code me-2"></i> Ejemplo de Estructura HTML5
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h4 mb-4">
+                            <i class="fas fa-cube text-primary me-2"></i>Código Semántico
+                        </h3>
+                        
+                        <!-- ESTILOS DE BOOTSTRAP -->
+                        <div class="bg-light p-4 rounded">
+                            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi Página Web&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Mi Sitio Web&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#nosotros"&gt;Nosotros&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Artículo Principal&lt;/h2&gt;
+            &lt;p&gt;Contenido interesante aquí...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;© 2025 Mi Sitio&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                        
+                        <!-- BADGES DE BOOTSTRAP - Componente enriquecido -->
+                        <div class="mt-4">
+                            <h5 class="mb-3">Etiquetas utilizadas:</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">header</span>
+                                <span class="badge bg-primary">nav</span>
+                                <span class="badge bg-primary">main</span>
+                                <span class="badge bg-primary">article</span>
+                                <span class="badge bg-primary">footer</span>
+                                <span class="badge bg-success">html5</span>
+                                <span class="badge bg-info">semántica</span>
+                                <span class="badge bg-warning">estructura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="mb-2">
+                        <i class="far fa-copyright me-2"></i> Lo que no sabías sobre HTML | Por: Alex Mauricio Carlosama Ayala
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-graduation-cap me-2"></i> Estudiante de la Universidad Técnica Particular de Loja
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP  JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

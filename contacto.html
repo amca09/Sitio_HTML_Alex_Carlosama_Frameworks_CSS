@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Evolución del HTML</title>
+    
+    <!-- BOOTSTRAP  CSS - FRAMEWORK PRINCIPAL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FONT AWESOME - ÍCONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- NAVBAR DE BOOTSTRAP - Responsive con toggle -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>Evolución HTML
+            </a>
+            
+            <!-- BOTÓN TOGGLE PARA MÓVIL Bootstrap -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- MENÚ COLABSABLE Bootstrap -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home me-1"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">
+                            <i class="fas fa-history me-1"></i> Historia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparativa.html">
+                            <i class="fas fa-balance-scale me-1"></i> Comparativa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contenido.html">
+                            <i class="fab fa-html5 me-1"></i> HTML5
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">
+                            <i class="fas fa-envelope me-1"></i> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER CON JUMBOTRON Bootstrap -->
+    <header class="bg-gradient-primary text-white py-5 mb-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">
+                        <i class="fas fa-envelope me-3"></i> Contáctanos
+                    </h1>
+                    <p class="lead mb-4">¿Tienes preguntas sobre HTML? Nos encantaría ayudarte</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- FCARD DE BOOTSTRAP -->
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-envelope me-2"></i> Formulario de Contacto
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- FORMULARIO DE BOOTSTRAP -->
+                        <form class="formulario-contacto" action="#" method="post">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">
+                                    <i class="fas fa-user"></i> Nombre completo:
+                                </label>
+                                <!-- INPUT DE BOOTSTRAP -->
+                                <input type="text" id="nombre" name="nombre" required 
+                                       class="form-control" placeholder="Tu nombre completo">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i> Correo electrónico:
+                                </label>
+                                <input type="email" id="email" name="email" required 
+                                       class="form-control" placeholder="tu@email.com">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label">
+                                    <i class="fas fa-tag"></i> Asunto de tu consulta:
+                                </label>
+                                <!-- SELECT DE BOOTSTRAP -->
+                                <select id="asunto" name="asunto" required class="form-select">
+                                    <option value="">Selecciona un tema</option>
+                                    <option value="html5"><i class="fab fa-html5"></i> Dudas sobre HTML5</option>
+                                    <option value="historia"><i class="fas fa-history"></i> Historia del HTML</option>
+                                    <option value="tecnica"><i class="fas fa-tools"></i> Problema técnico</option>
+                                    <option value="sugerencia"><i class="fas fa-lightbulb"></i> Sugerencia de contenido</option>
+                                    <option value="colaboracion"><i class="fas fa-handshake"></i> Posibilidad de colaboración</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">
+                                    <i class="fas fa-comment"></i> Tu mensaje:
+                                </label>
+                                <!-- TEXTAREA DE BOOTSTRAP -->
+                                <textarea id="mensaje" name="mensaje" rows="5" required 
+                                          class="form-control" 
+                                          placeholder="Escribe tu consulta sobre HTML aquí..."></textarea>
+                            </div>
+                            
+                            <!-- CHECKBOX DE BOOTSTRAP -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" 
+                                       name="newsletter" value="suscribir" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    <i class="fas fa-newspaper"></i> Suscribirme al newsletter sobre HTML y desarrollo web
+                                </label>
+                            </div>
+                            
+                            <!-- BOTONES DE BOOTSTRAP con grid system -->
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane"></i> Enviar mensaje
+                                </button>
+                                <button type="reset" class="btn btn-outline-secondary btn-lg">
+                                    <i class="fas fa-trash-alt"></i> Limpiar formulario
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- CARD DE BOOTSTRAP -->
+                <div class="card shadow border-0 mb-5">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-user-circle me-2"></i> Información de Contacto Directo
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <!-- LIST GROUP DE BOOTSTRAP -->
+                        <ul class="list-group list-group-flush mb-4">
+                            <li class="list-group-item">
+                                <i class="fas fa-user text-primary me-2"></i>
+                                <strong>Nombre:</strong> Alex Mauricio Carlosama Ayala
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-envelope text-primary me-2"></i>
+                                <strong>Email:</strong> amcarlosama2@utpl.edu.ec
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-phone text-primary me-2"></i>
+                                <strong>Teléfono:</strong> 0967251209
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-graduation-cap text-primary me-2"></i>
+                                <strong>Estudiante de:</strong> Universidad Técnica Particular de Loja
+                            </li>
+                        </ul>
+                        
+                        <h4 class="mb-3">
+                            <i class="fas fa-clock text-success me-2"></i> Horarios de atención:
+                        </h4>
+                        
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="fas fa-calendar-day text-success me-2"></i>
+                                <strong>Lunes a Viernes:</strong> 9:00 - 18:00
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-calendar-day text-success me-2"></i>
+                                <strong>Sábados:</strong> 10:00 - 14:00
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-calendar-day text-success me-2"></i>
+                                <strong>Domingos:</strong> Cerrado
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- CARD DE BOOTSTRAP -->
+                <div class="card shadow border-0">
+                    <div class="card-header bg-warning text-dark">
+                        <h2 class="h3 mb-0">
+                            <i class="fas fa-lightbulb me-2"></i> Áreas de Especialización
+                        </h2>
+                    </div>
+                    <div class="card-body p-4">
+                        <h3 class="h4 mb-3">
+                            <i class="fas fa-hands-helping text-warning me-2"></i> Temas en los que puedo ayudarte
+                        </h3>
+                        <p>Puedo ayudarte con temas como:</p>
+                        
+                        <!-- GRID SYSTEM DE BOOTSTRAP con listas -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <i class="fas fa-file-code text-warning me-2"></i>
+                                        Fundamentos de HTML y HTML5
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-sitemap text-warning me-2"></i>
+                                        Estructura semántica web
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-mobile-alt text-warning me-2"></i>
+                                        Diseño web responsive
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <i class="fas fa-bolt text-warning me-2"></i>
+                                        Optimización de sitios web
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-search text-warning me-2"></i>
+                                        Mejores prácticas de desarrollo web
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="fas fa-exchange-alt text-warning me-2"></i>
+                                        Transición de HTML4 a HTML5
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="mb-2">
+                        <i class="far fa-copyright me-2"></i> 2025 - Evolución del HTML | Por Alex Mauricio Carlosama Ayala
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i> Contacto: amcarlosama2@utpl.edu.ec | 
+                        <i class="fas fa-phone me-2"></i> Teléfono: 0967251209
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-graduation-cap me-2"></i> Estudiante de la Universidad Técnica Particular de Loja
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
